@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0  2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+section.main{
+    background-image: url('/imgs/Background.svg');
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+
+}
+
+
+.menu{display: flex;width: 100%;}
+
+.logo-menu{width: 50%;}
+
+.items-menu{width: 50%;}
+
+.items-menu a{
+    font-weight: bold;
+    color: blanchedalmond;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+.items-menu a:hover{
+    border-bottom: 2px solid salmon;
+}
+
+.items-menu button{
+    background: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    border-bottom: none;
+    border:none;
+    font-size: 20px;
+    color: blanchedalmond;
+}
+
+.items-menu button:hover{
+    background-color: #FFDD33;
+    color: white;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.mockup{
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.mockup h2{
+    font-size: 50px;
+}
+
+.mockup img{max-width: 100%;}
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: calc(100%/5);
+
+}
+
+section.porque-nos{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+
+}
+section.porque-nos > .center > h2 {
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+    
+}
+section.porque-nos > .center > p {
+    font-size: 20px;
+    color: #7E92AC;
+    text-align: center;
+    width: 100%;
+
+}
+
+
+
+section.porque-nos > .center {
+   max-width: 1280px;
+
+}
+
+.diferenciais{
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais{
+    width: calc(100%/3);
+    box-shadow: 0px 20px 40px #2426721C;
+    border-radius: 20px;
+    margin-right: 2%;
+    padding: 10px 20px;
+
+}
+
+.box-diferenciais h3{
+    font-size: 24px;
+    color: black;
+    margin: 20px 0px;
+}
+
+.box-diferenciais p{
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+   
+}
+/*~~~~~~~~~~~~~~~~~~~~Banner~~~~~~~~~~~~~~~~~~~~~~*/
+section.cta{
+    background-image: url('imgs/BANNER\ IMG.svg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    text-align: center;
+    color: white;
+   
+}
+
+section.cta h2,
+section.cta h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section.cta h2{
+    font-size: 40px;
+}
+
+section.cta button{
+    background-color: #0F3FD3; 
+    border: solid 4px #FFDD33;
+    border-radius: 15px; 
+    color:#0F3FD3;
+    display: inline-block;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: ease-out 0.3s;
+    position: relative;
+    z-index: 1;
+    outline: none;
+}
+.cta button:hover{
+    cursor: pointer;
+}
+.cta button::before{
+   transition: 0.5s all ease;
+   position: absolute;
+   top: 50%;
+   left: 0%;
+   right: 0%;
+   bottom: 50%;
+   opacity: 0;
+   content: '''';
+   background-color: #FFDD33 ;
+}
+
+.cta button:hover::before{
+    transition: 0.5 all ease;
+    top: 0;
+    bottom: 0;
+    opacity: 1;
+    z-index: -1;
+}
+    /*Beneficios para você*/
+
+section.beneficios{
+    padding: 50px 0;
+}
+
+.listabeneficios{
+    width: 40%;
+    margin-top: 30px;
+}
+
+.listabeneficios h1{
+    color: black;
+    font-size: 40px;
+}
+
+.listabeneficios p{
+    vertical-align: middle;
+    font-size: 14px;
+    color: #7E92AC;
+}
+.listabeneficios span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.listabeneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.img-beneficios{
+    width: 60%;
+}
+
+.img-beneficios img{max-width:100%;}
+
+.listabeneficios button{
+    background-color: white;
+    border: 4px solid #FFDD33; 
+    border-radius: 15px;
+    color: salmon;
+    padding: 10px 17px;
+    font-weight: bolder;
+    margin-left: 100px;
+    transition: ease-out 0.3s;
+    position: relative;
+    z-index: 1;
+    outline: none;
+    font-size: 2rem;
+}
+.beneficios button:hover{
+    color: salmon;
+    cursor: pointer;
+}
+.beneficios button::before{
+   transition: 0.5s all ease;
+   position: absolute;
+   top: 0;
+   left: 50%;
+   right: 50%;
+   bottom: 0;
+   opacity: 0;
+   content: '''';
+   background-color: #FFDD33 ;
+}
+
+.beneficios button:hover::before{
+    transition: 0.5 all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    z-index: -1;
+}
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding: 60px 0;
+    text-align: center;
+}
+
+section.depoimentos > h1{
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.container-slider{
+    overflow: hidden;
+    padding:40px 0;   
+}
+
+.container-slider-single{
+    float: left;
+    background-color:white;
+    text-align: center;
+    padding:15px;
+    border-radius:10px;
+   
+}
+.container-slider-single p{
+    margin:15px 0;
+    color:#7E92AC;
+    font-size: 14px;
+}
+
+.container-slider-single h3{
+    font-size: 26px;
+}
+.container-slider-single h4{
+    font-size: 17px;
+    color: #7E92AC;
+
+}
+
+.slick-slide{
+    margin-left: 27px;
+}
+
+ .slick-list{
+   margin-left: -27px;
+ }
+
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+    display: block;
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	top:30px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #373855;
+	color: #373855;
+}
+
+.slick-slide:focus { outline: none; }
+
+/*~~~~~~~~~~~~FIM SLICK SLIDER~~~~~~~~~~~~~~~~~~~~*/
+
+section.contato{
+    padding: 40px 0;
+    text-align: center;
+    align-items: center;
+}
+
+section.contato h1{
+    font-size: 50px;
+}
+section.contato form{
+    width: 100%;
+    
+}
+
+.contato input[type=text],
+.contato input[type=email]
+{
+    width: 100%;
+    height: 45px;
+    margin: 10px 0;
+    padding-left: 10px;
+    background-color: #FBFCFE;
+    border-radius: 10px;
+    border: solid 2px #3498db;
+}
+.contato textarea{
+
+    width: 100%;
+    height:120px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #FBFCFE;
+    border-radius: 10px;
+    border: solid 2px #3498db;
+    resize: none;
+}
+
+section.contato input[type=submit]{
+    padding: 15px 15px;
+    width: 20%;
+    background-image: linear-gradient(
+        225deg,
+       #f1c40f 0%,
+       #f1870f 50%,
+       red 100%
+    );
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 2s;
+   
+}
+section.contato input[type=submit]:hover{
+    background-image: linear-gradient(
+        225deg,
+       red 0%,
+       #f1870f 50%,
+       #f1c40f 100%
+    );
+    transition: 2s;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .listabeneficios,.img-beneficios{
+        width: 100%;
+        margin-bottom: 30px;
+
+    }
+    .diferenciais{
+
+        flex-wrap: wrap;
+
+    }
+
+    .box-diferenciais{
+
+        width: 100%;
+        margin-right: 0px;
+
+    }
+
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        align-items: center;
+    }
+    section.marcas img{
+        max-width: 300px;
+        width:100%;
+    }
+}
+
